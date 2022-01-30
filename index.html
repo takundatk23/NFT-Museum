@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- material CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font awesomes -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>NFT Museum</title>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="images/apelogo.png" alt="logo of ape NTF Dash">
+                    <h2>NFT<span class="main-blue">MUSEUM</span></h2>
+                </div>
+               <div class="close" id="close-btn">
+                <span class="material-icons-sharp">close</span>
+               </div> 
+            </div>
+            <div class="sidebar">
+                <a href="" class="active">
+                    <span class="material-icons-sharp">dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="">
+                    <span class="material-icons-sharp">favorite_border</span>
+                    <h3>Favorite</h3>
+                </a>
+                <a href="">
+                    <span class="material-icons-sharp">mail_outline</span>
+                    <h3>Messages</h3>
+                    <span class="message-count">26</span>
+                </a>
+                <a href="">
+                    <span class="material-icons-sharp">star_border</span>
+                    <h3>My Collection</h3>
+                </a>
+                <a href="">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Profile</h3>
+                </a>
+                <a href="">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Sign Out</h3>
+                </a>
+            </div>
+        </aside>
+
+<!-- --------------------END OF ASIDE SECTION----------------->
+
+<main>
+    <h1>Dashboard</h1>
+    <div class="date">
+        <input type="date">
+    </div>
+    
+    <div class="insights">
+
+        <div class="ethereum">
+            <i class="fab fa-ethereum"></i>
+            <div class="middle">
+                <div class="left">
+                    <h3>Price of Ethereum</h3>
+                    <h1>$2,537</h1>
+                </div>
+                <div class="progress">
+                    <svg>
+                        <circle cx='38' cy='38' r='36'><circle>
+                    </svg>
+                    <div class="number">
+                        <p>-2.04%</p>
+                    </div>
+                </div>
+            </div>
+            <small class="text-muted">Last 24 Hours</small>
+        </div>
+<!-- --------------------END OF ETHEREUM----------------->
+
+        <div class="expenses">
+            <span class="material-icons-sharp">bar_chart</span>
+            <div class="middle">
+                <div class="left">
+                    <h3>Total Spent</h3>
+                    <h1>$103,550</h1>
+                </div>
+                <div class="progress">
+                    <svg>
+                        <circle cx='38' cy='38' r='36'><circle>
+                    </svg>
+                    <div class="number">
+                        <p>56%</p>
+                    </div>
+                </div>
+            </div>
+            <small class="text-muted">All Time</small>
+        </div>
+<!-- --------------------END OF EXPENSE----------------->
+
+        <div class="income">
+            <span class="material-icons-sharp">stacked_line_chart</span>
+            <div class="middle">
+                <div class="left">
+                    <h3>Profit Made</h3>
+                    <h1>$12,276</h1>
+                </div>
+                <div class="progress">
+                    <svg>
+                        <circle cx='38' cy='38' r='36'><circle>
+                    </svg>
+                    <div class="number">
+                        <p>41%</p>
+                    </div>
+                </div>
+            </div>
+            <small class="text-muted">All Time</small>
+        </div>
+
+        <!-- --------------------END OF INCOME------------------->
+
+        
+    </div> <!----- END OD INSIGHTS--- -->
+    <div class="recent-transactions">
+        <h2>Recent Trasactions</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>NTF Name</th>
+                    <th>NTF Collection</th>
+                    <th>Date Purchased</th>
+                    <th>Price</th>
+                    <th>Unique Blockchain Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CryptoPunk #7523</td>
+                    <td>CryptoPunk</td>
+                    <td>23/06/2020</td>
+                    <td class="success">$1.75 million</td>
+                    <td>#7523</td>
+                </tr>
+                <tr>
+                    <td>The Merge</td>
+                    <td>Pak</td>
+                    <td>23/08/2021</td>
+                    <td class="success">$9.8 million</td>
+                    <td>#Pak2019</td>
+                </tr>
+                <tr>
+                    <td>Friendly Ape</td>
+                    <td>Undisputed Culptrites</td>
+                    <td>20/01/2022</td>
+                    <td class="danger">-$11.2 million</td>
+                    <td>#ape1FUN</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="#" id="showing">Show All</a>
+    </div>
+
+    <!-- ------END OS TABLE ------ -->
+</main>
+
+<div class="right">
+    <div class="top">
+        <button id="menu-btn">
+            <span class="material-icons-sharp">menu</span>
+        </button>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+        <div class="profile">
+            <div class="info">
+                <p><b>Takunda</b></p>
+                <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+                <img src="images/profilepic.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <script src="transactions.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
